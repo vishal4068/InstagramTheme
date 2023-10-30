@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <div class="container" id="header" style="display: flex;">
+
+        <div class="logo"><img src="logo.png" alt=""></div>
+
+        <div class="container" id="icon" style="padding-right: 10px;">
+            <ion-icon name="chatbubble-outline" style="height: 100%; float: right; font-size: 30px;"></ion-icon>
+            <ion-icon name="heart-outline"
+                style="height: 100%; float: right; margin-right: 20px; font-size: 30px;"></ion-icon>
+        </div>
+
+    </div>
+    <div class="container" id="stories">
+        <div class="story"><img src="v.jpg" alt=""></div>
+        <div class="story"><img src="i.jpg" alt=""></div>
+        <div class="story"><img src="s.jpg" alt=""></div>
+        <div class="story"><img src="h.jpg" alt=""></div>
+        <div class="story"><img src="a.jpg" alt=""></div>
+        <div class="story"><img src="l.jpg" alt=""></div>
+        <div class="story"><img src="insta.jpg" alt=""></div>
+        <div class="story"><img src="g.jpg" alt=""></div>
+        <div class="story"><img src="aa.jpg" alt=""></div>
+        <div class="story"><img src="r.jpg" alt=""></div>
+        <div class="story"><img src="j.jpg" alt=""></div>
+        <div class="story"><img src="e.jpg" alt=""></div>
+        
+
+    </div>
+
+    <div class="container" id="post-heading">
+        <div class="profilepic">
+            <div class="profile"><img src="devpic.jpg" alt=""></div>
+        </div>
+        <div class="profiledes">
+            <p style="font-weight: bold;">Vishal Garje <br> <span style="font-weight: lighter;">Nashik, Maharashtra</span></p>
+        </div>
+        <div class="container" id="icon">
+            <ion-icon name="ellipsis-vertical" style="height: 100%; float: right; font-size: 20px"></ion-icon>
+        </div>
+    </div>
+
+    <div class="container" id="post">
+        <div class="post"><img src="post.jpg" ondblclick="likeonedbl()" alt=""></div>
+    </div>
+
+    <div class="container" id="like">
+        <ion-icon name="heart-outline" id="heartone" onclick="likeone()"></ion-icon>
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <div id="save">
+            <ion-icon name="bookmark-outline" id="saveone" onclick="saveone()" style="float: right;"></ion-icon>
+        </div>
+    </div>
+
+    <div class="container" id="post-heading">
+        <div class="profilepic">
+            <div class="profile"><img src="devpic.jpg" alt=""></div>
+        </div>
+        <div class="profiledes">
+            <p style="font-weight: bold;">Vishal Garje <br> <span style="font-weight: lighter;">Arabian Sea, Kerala</span></p>
+        </div>
+        <div class="container" id="icon">
+            <ion-icon name="ellipsis-vertical" style="height: 100%; float: right; font-size: 20px"></ion-icon>
+        </div>
+    </div>
+
+    <div class="container" id="post">
+        <div class="post"><img src="post2.jpg" ondblclick="liketwodbl()" alt=""></div>
+    </div>
+
+    <div class="container" id="like">
+        <ion-icon name="heart-outline" id="hearttwo" onclick="liketwo()"></ion-icon>
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <div id="save">
+            <ion-icon name="bookmark-outline" id="savetwo" onclick="savetwo()" style="float: right;"></ion-icon>
+        </div>
+    </div>
+
+
+    <div class="container" id="post-heading">
+        <div class="profilepic">
+            <div class="profile"><img src="devpic.jpg" alt=""></div>
+        </div>
+        <div class="profiledes">
+            <p style="font-weight: bold;">Vishal Garje <br> <span style="font-weight: lighter;">Munnar, Kerala</span></p>
+        </div>
+        <div class="container" id="icon">
+            <ion-icon name="ellipsis-vertical" style="height: 100%; float: right; font-size: 20px"></ion-icon>
+        </div>
+    </div>
+
+    <div class="container" id="post">
+        <div class="post"><img src="post3.jpg" ondblclick="likethreedbl()" alt=""></div>
+    </div>
+
+    <div class="container" id="like">
+        <ion-icon name="heart-outline" id="heartthree" onclick="likethree()"></ion-icon>
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <div id="save">
+            <ion-icon name="bookmark-outline" id="savethree" onclick="savethree()" style="float: right;"></ion-icon>
+        </div>
+    </div>
+
+
+    <div class="container" id="post-heading">
+        <div class="profilepic">
+            <div class="profile"><img src="devpic.jpg" alt=""></div>
+        </div>
+        <div class="profiledes">
+            <p style="font-weight: bold;">Vishal Garje <br> <span style="font-weight: lighter;">Kerala, India</span></p>
+        </div>
+        <div class="container" id="icon">
+            <ion-icon name="ellipsis-vertical" style="height: 100%; float: right; font-size: 20px"></ion-icon>
+        </div>
+    </div>
+
+    <div class="container" id="post">
+        <div class="post"><img src="post4.jpg" ondblclick="likefourdbl()" alt=""></div>
+    </div>
+
+    <div class="container" id="like" style="margin-bottom: 10vh;">
+        <ion-icon name="heart-outline" id="heartfour" onclick="likefour()"></ion-icon>
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <div id="save">
+            <ion-icon name="bookmark-outline" id="savefour" onclick="savefour()" style="float: right;"></ion-icon>
+        </div>
+    </div>
+
+    <div class="container" id="footer">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="duplicate-outline"></ion-icon>
+        <ion-icon name="film-outline"></ion-icon>
+        <ion-icon name="person-circle-outline"></ion-icon>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
